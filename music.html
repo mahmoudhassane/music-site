@@ -1,0 +1,410 @@
+<!-- Created by Mahmoud Khaled --><!doctype html><html><head> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <link href="https://fonts.googleapis.com/css2?family=Lobster" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet" type="text/css"> 
+ <style type="text/css" id="dcoder_stylesheet">/* Created by Mahmoud Khaled */
+
+body {  
+      background-image: url("https://j.top4top.io/p_1556w9oso0.jpg");
+
+
+}
+
+.all
+{   
+    opacity: 0;
+    animation-name: fade-in;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+.topnav {
+  opacity: 0.7;
+  overflow: hidden;
+  border-radius: 50px;
+  box-shadow: 0 7px 30px 1px black;
+  cursor: pointer;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  top:99%;
+  height:17px;
+  text-align: center;
+  padding: 20px 40px;
+  text-decoration: none;
+  font-size:17px ;
+  font-family: 'Arial', cursive;
+}
+
+.topnav a:hover {
+  background-color: lightgray;
+  color: black;
+}
+
+.topnav .active {
+  background-color: darkviolet;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: red;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.trip img
+{
+    border: solid;
+    border-radius: 500px;
+    box-shadow: 0 7px 30px 1px darkviolet;
+    margin-top:90px;
+    cursor: pointer;
+}
+
+#controls1
+{
+    margin: 10px auto 25px;
+    text-align: center;
+    width: 75%;
+    color: darkorange;
+    font-family: 'Arial', cursive;
+    font-size: 30px;
+    text-shadow: 0 0 10px darkorange, 0 0 5px darkorange;
+}
+
+#controls1 #stop1
+{
+    color: darkorange; 
+    font-size: 40px; 
+    cursor: pointer;
+    margin-right: 70px;
+}
+
+#controls1 #stop1:hover 
+{
+    box-shadow: 0 7px 30px 1px darkorange;
+}
+
+#controls1 #play1
+{
+    color: black; 
+    font-size: 50px; 
+    cursor: pointer;
+}
+
+#controls1 #play1:hover 
+{
+    box-shadow: 0 7px 30px 1px darkorange;
+}
+
+#controls1 #pause1
+{
+    color: darkorange; 
+    font-size: 40px; 
+    cursor: pointer;
+    margin-left: 70px;
+}
+
+#controls1 #pause1:hover 
+{
+    box-shadow: 0 7px 30px 1px darkorange;
+}
+
+
+
+
+#controls2
+{
+    margin: 10px auto 25px;
+    text-align: center;
+    width: 75%;
+    display: none;
+    color: darkorange;
+    font-family: 'Arial', cursive;
+    font-size: 30px;
+    text-shadow: 0 0 10px darkorange, 0 0 5px purple;
+}
+
+#controls2 #stop2
+{
+    color: darkorange; 
+    font-size: 40px; 
+    cursor: pointer;
+    margin-right: 70px;
+}
+
+#controls2 #stop2:hover 
+{
+    box-shadow: 0 7px 30px 1px darkorange;
+}
+
+#controls2 #play2
+{
+    color: black; 
+    font-size: 50px; 
+    cursor: pointer;
+}
+
+#controls2 #play2:hover 
+{
+    box-shadow: 0 7px 30px 1px darkorange;
+}
+
+#controls2 #pause2
+{
+    color: darkorange; 
+    font-size: 40px; 
+    cursor: pointer;
+    margin-left: 70px;
+}
+
+#controls2 #pause2:hover 
+{
+    box-shadow: 0 7px 30px 1px darkorange;
+}
+
+#controls3
+{
+    margin: 10px auto 25px;
+    text-align: center;
+    width: 75%;
+    display: none;
+    color: darkorange;
+    font-family: 'Arial', cursive;
+    font-size: 30px;
+    text-shadow: 0 0 10px darkorange, 0 0 5px purple;
+}    
+
+#controls3 #stop3
+{
+    color: darkorange; 
+    font-size: 40px; 
+    cursor: pointer;
+    margin-right: 70px;
+}
+
+#controls3 #stop3:hover 
+{
+    box-shadow: 0 7px 30px 1px darkorange;
+}
+
+#controls3 #play3
+{
+    color: black; 
+    font-size: 50px; 
+    cursor: pointer;
+}
+
+#controls3 #play3:hover 
+{
+    box-shadow: 0 7px 30px 1px darkorange;
+}
+
+#controls3 #pause3
+{
+    color: darkorange; 
+    font-size: 40px; 
+    cursor: pointer;
+    margin-left: 70px;
+}
+
+#controls3 #pause3:hover 
+{
+    box-shadow: 0 7px 30px 1px darkorange;
+}
+@keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }</style></head> 
+ <body> 
+  <div class="all"> 
+   <div class="topnav" id="myTopnav"> 
+    <a href="https://www.instagram.com/mahmoud_khaled06/" class="active">Follow On Instagram</a> 
+    <a class="song1" onclick="song1()">مهرجان عود البطل</a> 
+    <a class="song2" onclick="song2()">مهرجان شمس المجرة</a> 
+    <a class="song3" onclick="song3()">مهرجان عايز اسفر من هنا</a> 
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i></a> 
+   </div> 
+   <div class="trip"> 
+    <p align="center"> <img src="https://e.top4top.io/p_1556tzvrb0.png" width="70%"></p> 
+   </div> 
+   <div id="controls1">
+     عود البطل 
+    <br> 
+    <br> 
+    <i class="fa fa-stop" id="stop1" onclick="stopAudio1()" align="left"></i> 
+    <i class="fa fa-play" id="play1" onclick="playAudio1()" align="center"></i> 
+    <i class="fa fa-pause" id="pause1" onclick="pauseAudio1()" align="right"></i> 
+   </div> 
+   <div id="controls2">
+     مهرجان شمس المجرة 
+    <br> 
+    <br> 
+    <i class="fa fa-stop" id="stop2" onclick="stopAudio2()" align="left"></i> 
+    <i class="fa fa-play" id="play2" onclick="playAudio2()" align="center"></i> 
+    <i class="fa fa-pause" id="pause2" onclick="pauseAudio2()" align="right"></i> 
+   </div> 
+   <div id="controls3">
+     مهرجان عايز اسافر من هنا 
+    <br> 
+    <br> 
+    <i class="fa fa-stop" id="stop3" onclick="stopAudio3()" align="left"></i> 
+    <i class="fa fa-play" id="play3" onclick="playAudio3()" align="center"></i> 
+    <i class="fa fa-pause" id="pause3" onclick="pauseAudio3()" align="right"></i> 
+   </div> 
+  </div> 
+
+<script type="text/javascript" id="dcoder_script">// Created by Noor Alam
+
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+soundPlayer1 = new Audio("https://f.top4top.io/m_1556ra5h90.mp3");
+var textFaded 
+
+soundPlayer2 = new Audio("https://e.top4top.io/m_1556gdwh60.mp3");
+
+soundPlayer3 = new Audio("https://f.top4top.io/m_1556jqxuq1.mp3");
+
+    function playAudio1()
+    {
+        soundPlayer1.play();
+    }
+
+    function pauseAudio1()
+    {
+        soundPlayer1.pause();
+    }
+
+    function stopAudio1()
+    {
+        soundPlayer1.pause();
+        soundPlayer1.currentTime = 0;
+    }
+
+    function playAudio2()
+    {
+        soundPlayer2.play();
+    }
+
+    function pauseAudio2()
+    {
+        soundPlayer2.pause();
+    }
+
+    function stopAudio2()
+    {
+        soundPlayer2.pause();
+        soundPlayer2.currentTime = 0;
+    }
+
+    function playAudio3()
+    {
+        soundPlayer3.play();
+    }
+
+    function pauseAudio3()
+    {
+        soundPlayer3.pause();
+    }
+
+    function stopAudio3()
+    {
+        soundPlayer3.pause();
+        soundPlayer3.currentTime = 0;
+    }
+
+
+function song1()
+{
+    document.getElementById("controls2").style.display = "none";
+    document.getElementById("controls3").style.display = "none";
+    document.getElementById("controls1").style.display = "block";
+
+    soundPlayer2.pause();
+    soundPlayer2.currentTime = 0;
+
+    soundPlayer3.pause();
+    soundPlayer3.currentTime = 0;
+
+    if(document.getElementById("controls1").style.display == "none")
+    {
+        document.getElementById("controls1").style.display = "block";
+    }
+}
+
+function song2()
+{
+    document.getElementById("controls1").style.display = "none";
+    document.getElementById("controls3").style.display = "none";
+    document.getElementById("controls2").style.display = "block";
+
+    soundPlayer1.pause();
+    soundPlayer1.currentTime = 0;
+
+    soundPlayer3.pause();
+    soundPlayer3.currentTime = 0;
+
+    if(document.getElementById("controls2").style.display == "none")
+    {
+        document.getElementById("controls2").style.display = "block";
+    }
+}
+
+function song3()
+{
+    document.getElementById("controls2").style.display = "none";
+    document.getElementById("controls1").style.display = "none";
+    document.getElementById("controls3").style.display = "block";
+
+    soundPlayer2.pause();
+    soundPlayer2.currentTime = 0;
+
+    soundPlayer1.pause();
+    soundPlayer1.currentTime = 0;
+
+    if(document.getElementById("controls3").style.display == "none")
+    {
+        document.getElementById("controls3").style.display = "block";
+    }
+}
+</script>
+</body>
+</html>
